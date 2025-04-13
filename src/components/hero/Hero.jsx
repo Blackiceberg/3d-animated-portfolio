@@ -8,7 +8,7 @@ const Hero = () => {
                 <h1 className="hTitle">
                     Bonjour,
                     <br/>
-                    <span>Moi c'est Kennedy</span>
+                    <span>Moi c'est Kennedy!</span>
                 </h1>
                  {/* TITLE */}
                 <div className="awards">
@@ -21,7 +21,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* SCROLL SVG */}
-        <a href="#services">
+        <a href="#services" className="scroll">
           <svg
             width="50px"
             height="50px"
@@ -53,14 +53,17 @@ const Hero = () => {
              {/* SCROLL SVG */}
             <div className="follow">
                 <a href="/">
-                    <img src="/instagram" alt="" />
+                    <img src="/instagram.png" alt="" />
                 </a>
                 <a href="/">
-                    <img src="/facebook" alt="" />
+                    <img src="/facebook.png" alt="" />
                 </a>
                 <a href="/">
-                    <img src="/youtube" alt="" />
+                    <img src="/youtube.png" alt="" />
                 </a>
+                <div className="followTextContainer">
+                  <div className="followText">FOLLOW ME</div>
+                </div>
             </div>
               {/*BUBBLE*/}
               <Speech/>
@@ -89,9 +92,28 @@ const Hero = () => {
                 </textPath>
               </text>
             </svg>
+            <div className="arrow">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            white="50"
+            height="50"
+            fill="none"
+            stroke="black"
+            strokeWidth="2"
+            >
+            <path
+            d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"/>
+          </svg>
+            </div>
                 </div>
             </a>
-
+            </div>
+            <div className="bg">
+              {/*3d*/}
+              <div className="hImg">
+                <img src="/hero.png" alt="" />
+              </div>
             </div>
      </div>
     )
